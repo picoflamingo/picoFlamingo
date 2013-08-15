@@ -1,0 +1,48 @@
+;INCLUDE template01.pfi
+; --------------------------------
+; ----------------------------------------
+; Image
+BACKGROUND bg_4.png
+ADD_CENTERED_IMAGE 1.0 picoflamingo_seal.png
+NAME img1
+POSITION  -2.8 0.8 -4.65
+;POSITION 0.0 0.0 1.0
+COLOR 1.0 1.0 1.0 0.0
+;------------------------
+ADD_TEXT champb
+NAME c1
+ADD_DATA David Martinez Oliveira
+POSITION -3.1 -1.3 -4.5
+SCALE 180.0
+COLOR 0.3 0.3 0.3 0.0
+; ------------------------------------------
+;------------------------
+ADD_TEXT champb
+NAME c2
+ADD_DATA Laura Rodriguez Gonzalez
+POSITION -3.1 -1.5 -4.5
+SCALE 180.0
+COLOR 0.3 0.3 0.3 0.0
+; ------------------------------------------
+;------------------------
+ADD_TEXT champb
+NAME c3
+ADD_DATA {dmo,lir}papermint-desings.com
+POSITION -3.1 -1.75 -4.5
+SCALE 220.0
+COLOR 0.4 0.45 0.45 0.0
+; ------------------------------------------
+; ------------------------------------------
+FX_START
+FX_TCOLOR_TO c1 0.0 4000.0 0.3 0.3 0.3 1.0
+FX_TCOLOR_TO c2 2000.0 4000.0 0.3 0.3 0.3 1.0
+FX_TCOLOR_TO c3 4000.0 4000.0 0.45 0.45 0.45 1.0
+FX_TPOS img1 8000.0 4000.0  0.0 0.0 1.0 -2.8 0.8 -4.65
+FX_TROT img1 12000.0 4000.0 0.0 0.0 0.0  0.0 0.0 -6.28
+SET_DEPTH_TEST img1 0
+SET_POS img1 0.0 0.0 1.0
+SET_COLOR img1 1.0 1.0 1.0 1.0
+;FX_TCOLOR_TO img1 1400.0 4000.0 1.0 1.0 1.0 1.0
+;FX_TCOLOR_TO img2 4500.0 4000.0 1.0 1.0 1.0 1.0
+FX_END
+; EOF

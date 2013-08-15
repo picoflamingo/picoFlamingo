@@ -1,0 +1,5 @@
+; PointSize Style_name Font_Filename
+18	text03	FreeSans.ttf
+32	champ	Champagne.ttf
+64	big	Champagne_Bold.ttf
+32	champb	Champagne_Bold.ttf

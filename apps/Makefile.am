@@ -1,0 +1,2 @@
+SUBDIRS=video_server
+

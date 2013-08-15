@@ -1,0 +1,28 @@
+Fri Nov 30 16:57:31 2012 +0100
+
+	* Initial support for Raspberry Pi
+
+Fri Mar 16 06:41:35 CET 2012
+
+	* Improved configure.ac
+
+Sun Jan  8 01:39:29 CET 2012
+
+	* Updated configure.ac (select OpenGL ES libraries)
+	* Added remote interface TCP and BT
+	* Fixed recalculation of image quad vertex when texture changes
+	* Added files required for instalation (fonts, shaders).
+
+Sat Oct  8 12:04:31 CEST 2011
+
+	* Added clickable property for images
+	* Initial Texture manager implementation
+
+Sat Oct  1 18:56:22 CEST 2011
+
+	* Version raised 0.4.2
+	* Initial autotools migration
+	* Several bugs fixed for static text component
+	* Improvements on text highlight feature
+	* Minor bug fixes and updates
+

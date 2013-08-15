@@ -1,0 +1,65 @@
+INCLUDE template01.pfi
+; --------------------------------
+; ----------------------------------------
+; Image
+ADD_CENTERED_IMAGE 1.2 nokia1.png
+NAME img1
+POSITION -2.2 -1.1 -4.65
+COLOR 1.0 1.0 1.0 0.0
+; ----------------------------------------
+; Image
+ADD_CENTERED_IMAGE 2.0 moko.png
+NAME img2
+POSITION -0.9 -1.2 -4.62
+COLOR 1.0 1.0 1.0 0.0
+; ----------------------------------------
+; Image
+ADD_CENTERED_IMAGE 2.0 omap1.png
+NAME img3
+POSITION -2.7 -1.9 -4.6
+COLOR 1.0 1.0 1.0 0.0
+;---------------------------------------------
+ADD_TEXT champb
+NAME c1
+ADD_DATA A simple application rendering the presentation
+POSITION -2.9 1.2 -4.5
+SCALE 160.0
+COLOR 0.0 0.0 0.0 1.0
+;------------------------
+ADD_TEXT champ
+NAME c1_txt
+ADD_DATA - It is controlled remotely
+ADD_DATA - Can run in the Beagle, an X86 PC and other devices
+ADD_DATA - Small and light (around 200Kb)
+POSITION -2.6 0.9 -4.5
+SCALE 200.0
+COLOR 0.0 0.0 0.0 1.0
+SET_TEXT_INTERLINE 0.27
+;-----------------------------
+;-------------------------------
+ADD_TEXT champb
+NAME c2
+ADD_DATA A remote control application
+POSITION -2.9 -0.2 -4.5
+SCALE 160.0
+COLOR 0.0 0.0 0.0 1.0
+;------------------------
+ADD_TEXT champ
+NAME c2_txt
+ADD_DATA - Ideally running on a mobile device
+ADD_DATA         - Symbian S60 (BlueTooth)
+ADD_DATA         - OpenMoko FreeRunner (BT/Wifi)
+ADD_DATA         - OMAP Zoom II (BT/Wifi)
+ADD_DATA         - Android Device (BT/Wifi)
+POSITION -0.2 -0.6 -4.5
+SCALE 200.0
+COLOR 0.0 0.0 0.0 1.0
+SET_TEXT_INTERLINE 0.27
+; ------------------------------------------
+FX_START
+UPDATE_TEXT title What is it composed of...
+FX_TCOLOR_TO img1 1400.0 4000.0 1.0 1.0 1.0 1.0
+FX_TCOLOR_TO img2 3000.0 4000.0 1.0 1.0 1.0 1.0
+FX_TCOLOR_TO img3 6000.0 4000.0 1.0 1.0 1.0 1.0
+FX_END
+; EOF

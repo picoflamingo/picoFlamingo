@@ -1,0 +1,31 @@
+Simple JPEG Streamer README
+-----------------------------------
+Copyright (c) 2010
+	     David Martínez Oliveira dmo AT papermint-designs DOT com
+See the end of the file for license conditions.
+----------------------------------------------------------------
+This is the simplest JPEG network streamer that you can think about. It is even dumb, but may be useful some of you out there.
+
+The package contains two executables, one for v4l version 1 and the other for v4l version 2. Chose the one you need depending on the hardware available.
+
+Notes:
+The v4l2 server expects a device delivering YUYV image format. This is hard-coded and you will need
+
+
+
+-------------------------------
+.
+This file is part of Simple Video Streamer
+
+Simple Video Streamer is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Simple Video Streamer is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with NetKitty.  If not, see <http://www.gnu.org/licenses/>.

@@ -1,0 +1,5 @@
+picoFlamingo Known Bugs
+-----------------------
+* When using MESA on x86 3D models normals are wrong
+* 3DS models does not render on Raspberry Pi
+

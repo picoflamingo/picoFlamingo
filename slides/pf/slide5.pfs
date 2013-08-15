@@ -1,0 +1,60 @@
+INCLUDE template01.pfi
+; --------------------------------
+; ----------------------------------------
+; Image
+ADD_CENTERED_IMAGE 2.0 omap1.png
+NAME img1
+POSITION -2.0 -1.0 -4.6
+COLOR 1.0 1.0 1.0 0.0
+ADD_MODEL 3D5.3ds
+NAME 3d
+;POSITION 1.8 0.8 -3.5
+POSITION 1.0 0.0 -2.5
+;---------------------------------------------
+ADD_TEXT champb
+NAME c1
+ADD_DATA Lots of improvements on the render engine
+POSITION -2.9 1.2 -4.5
+SCALE 160.0
+COLOR 0.0 0.0 0.0 1.0
+;------------------------
+ADD_TEXT champ
+NAME c1_txt
+ADD_DATA - 3DS 3d models
+ADD_DATA - Live Video Component
+ADD_DATA - On-Slide Animations
+ADD_DATA - Extended Command-line Interface
+POSITION -2.2 0.9 -4.5
+SCALE 200.0
+COLOR 0.0 0.0 0.0 1.0
+SET_TEXT_INTERLINE 0.27
+;-----------------------------
+;-------------------------------
+ADD_TEXT champb
+NAME c2
+ADD_DATA and more...
+POSITION -0.5 -0.5 -4.5
+SCALE 160.0
+COLOR 0.0 0.0 0.0 1.0
+;------------------------
+ADD_TEXT champ
+NAME c2_txt
+ADD_DATA - Voice Commanding 
+ADD_DATA - Simple Video Streamer
+ADD_DATA - Easy Scripting
+ADD_DATA - More devices: 
+ADD_DATA   ... OMAP Zoom II, Blaze, PandaBoard
+POSITION -0.2 -0.8 -4.5
+SCALE 200.0
+COLOR 0.0 0.0 0.0 1.0
+SET_TEXT_INTERLINE 0.27
+; ------------------------------------------
+FX_START
+UPDATE_TEXT title What is in the current release...
+FX_TCOLOR img1 1400.0 4000.0 1.0 1.0 1.0 0.0 1.0 1.0 1.0 1.0
+FX_TPOS img1 1500.0 30000.0 -2.0 -1.0 -4.6 -1.2 -1.0 -3.0
+FX_TROT 3d 1400.0 30000.0 0.0 0.0 0.0 6.28 0.0 0.0 
+SET_DEPTH_TEST img1 0
+;FX_TPOS 3d 1400.0 20000.0 1.8 0.8 -3.5 1.0 0.0 -2.5
+FX_END
+; EOF

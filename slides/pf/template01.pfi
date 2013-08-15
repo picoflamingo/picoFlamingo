@@ -1,0 +1,16 @@
+;INCLUDE template.pfi
+; --------------------------------
+BACKGROUND bg_3.png
+; Title
+ADD_TEXT champb
+NAME title
+ADD_DATA Title
+POSITION 4.0 1.75 -4.5
+SCALE 110.0
+COLOR 0.0 0.0 0.0 1.0
+FX_START
+FX_TPOS title 0.0 1000.0 4.0 1.75 -4.5 -2.6 1.75 -4.5
+FX_TPOS title 1010.0 200.0 -2.6 1.75 -4.5 -2.2 1.75 -4.5
+FX_TPOS title 1300.0 400.0 -2.2 1.75 -4.5 -2.6 1.75 -4.5
+FX_END
+; EOF

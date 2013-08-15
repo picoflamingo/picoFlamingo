@@ -1,0 +1,30 @@
+TODO
+---------------------------
+
+[X] Allow update of STATIC_TEXT items
+
+[X] Add texture manager
+[X]   Images gets loaded once and then located by name
+
+[ ] Add animation of 3D Models subobjects
+[ ]   Would allow basic animation of actions to be performed
+
+[ ] Add network connection management
+[X]   Add TCP sockets for commanding
+[X]   Add BlueTooth RFComm sockets for commanding
+[ ]   Add name resolving features
+[ ]   Functions to connect to other systems at run-time
+
+[ ] Update live video component to use the bc_cat driver for quick access to video memory
+
+[ ] Fix Animation Engine to support animation composition (translation and rotation simultaneously)
+
+[ ] Basic Widgets to include
+[-] - We need to keep a bounding box for click detection ( Only for images for the time being)
+[ ] - Basic set
+[X]    * Button
+[X]    * Label (this is actually text)
+[ ]    * Edit (text entry box)
+[ ]    * List Box (select from a list)
+[-]  - Can take event from an event queue (external events)
+[-]  - Produce events to external sources (put the events in the queue)

@@ -1,0 +1,72 @@
+picoFlamingo Installation Instructions
+Copyright (c) 2009,2010, 2011, 2012
+    David Martinez Oliveira (dmo AT papermint-designs.com)
+See the end of the file for license conditions
+------------------------------------------------------
+picoFlamingo is distributed as source code using the GNU autotools build system. It can be built on a variety of platforms. This document describes the installation process on the currently supported ones.
+
+The general system requirements are listed below:
+
+- OpenGL ES development files (headers and libraries)
+- Freetype library development files
+- X11 development files (for X11 vbuild)
+
+
+OMAP3/OMAP4 Platforms
+----------------------
+picoFlamingo on OMAP platforms can be build for X-Windows or Framebuffer execution. The selection of the target display system is performed at configure time, using the following parameters:
+
+For Framebuffer
+./configure --with-target=fb 
+
+For X-Windows
+./configure --with-target=x11
+
+x86 Platforms
+----------------
+picoFlamingo can also run on x86 platforms. In this case an OpenGL ES implementation is required. The following OpenGL ES platforms/emulators are known to work
+
+- MESA Library OpenGL ES
+- Imagination Technologies x86 SDK
+- Mali OpenGL ES SDK
+
+When running on x86 platforms, only X-Windows rendering target is supported. This target is selected by default when configuring the package. The configuration process forces 32bits build as some of the OpenGL ES SDK are provided in binary form for that architecture.
+
+In the case that the OpenGL ES development files are installed in a non-standard path, picoFlamingo should be configured with the following command:
+
+./configure --with-target-dir=/path/to/sdk
+
+The provided path has to be the high level development directory that includes a include/ and lib/ directories.
+
+A note on Imagination Technologies SDK
+--------------------------------------
+Some of the releases of this SDK depends on a libtiff version that is no longer available on newer systems. If this problem arise, create a link with the complaining name to your current version or update to the latest version of the SDK
+
+A note on Mali OpenGL ES SDK
+-----------------------------
+The Mali OpenGL ES SDK seems not to support the highp precision qualifier on shaders. picoFlamingo default shaders are known to work on OMAP and x86 platforms using MESA and Imagination Technologies SDK. In order to use the Mali SDK the shaders have to be modified according to the following rules.
+
+- Add a default precision qualifier at the beginning of each shader files
+precision lowp float;
+- Then remove any qualifier on the shader (uniforms, varyings and local variables)
+
+
+
+
+
+
+--
+This file is part of picoFlamingo
+
+picoFlamingo is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+picoFlamingo is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with picoFlamingo.  If not, see <http://www.gnu.org/licenses/>.

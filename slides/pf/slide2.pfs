@@ -1,0 +1,55 @@
+INCLUDE template01.pfi
+; --------------------------------
+; ----------------------------------------
+; Image
+ADD_CENTERED_IMAGE 2.5 beagle2.png
+NAME img1
+POSITION -2.4 0.27 -4.65
+COLOR 1.0 1.0 1.0 0.0
+; ----------------------------------------
+; Image
+ADD_CENTERED_IMAGE 2.3 pico1.png
+NAME img2
+POSITION -2.3 -1.4 -4.6
+COLOR 1.0 1.0 1.0 0.0
+;---------------------------------------------
+ADD_TEXT champb
+NAME c1
+ADD_DATA picoFlamingo is a 3D Portable Presentation System
+POSITION -2.9 1.2 -4.5
+SCALE 160.0
+COLOR 0.0 0.0 0.0 1.0
+;------------------------
+ADD_TEXT champ
+NAME c1_txt
+ADD_DATA - Uses a BeagleBoard to fit in your pocket
+ADD_DATA - Complete System. No additional HW or SW
+ADD_DATA - Everything in a slide is a 3D object
+POSITION -1.5 0.9 -4.5
+SCALE 200.0
+COLOR 0.0 0.0 0.0 1.0
+SET_TEXT_INTERLINE 0.27
+;-----------------------------
+;-------------------------------
+ADD_TEXT champb
+NAME c2
+ADD_DATA picoDLP is optional
+POSITION -2.9 -0.5 -4.5
+SCALE 160.0
+COLOR 0.0 0.0 0.0 1.0
+;------------------------
+ADD_TEXT champ
+NAME c2_txt
+ADD_DATA - Still can use available infrastructure with the DVI interface
+ADD_DATA - With the picoDLP the system becomes fully portable
+POSITION -1.5 -0.8 -4.5
+SCALE 200.0
+COLOR 0.0 0.0 0.0 1.0
+SET_TEXT_INTERLINE 0.27
+; ------------------------------------------
+FX_START
+UPDATE_TEXT title What is it...
+FX_TCOLOR_TO img1 1400.0 4000.0 1.0 1.0 1.0 1.0
+FX_TCOLOR_TO img2 4500.0 4000.0 1.0 1.0 1.0 1.0
+FX_END
+; EOF
