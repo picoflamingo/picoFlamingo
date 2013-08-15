@@ -18,7 +18,7 @@ The features below are currently available on "The cracking egg".
     * Easily extensible with new slide components
     * Runs on any OpenGL ES 2.0 linux capable system:
         - x86 (using MESA or proprietary GLES emulators)
-        - ARM (BeagleBoard, OMAP ZoomII, Blaze,i Raspberry Pi...)
+        - ARM (BeagleBoard, OMAP ZoomII, Blaze, Raspberry Pi...)
     * Frambuffer and X11 versions
 
 The features below are still under development:
